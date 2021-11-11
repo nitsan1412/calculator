@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Calculator</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
+      rel="stylesheet"
+    />
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <button id="baseMode">basic</button>
+        <button id="sciMode">science</button>
+        <button id="progMode">program</button>
+        <div class="allDisplay">
+          <div class="row"> 
+            <div class="baseTag progInter">decimal</div>
+            <div class="baseTag progInter">Hexa</div>
+          </div>
+          <div class="row">
+            <!-- <div class="baseTag progInter">Decimal</div> -->
+            <div class="calculator__display dis">
+              0
+            </div>
+            <div class="hexa__display dis progDis progInter">
+            <!-- <div class="baseTag">Hexa</div> -->
+            0
+          </div>
+          </div>
+          <div class="row"> 
+            <div class="baseTag progInter">Bin</div>
+            <div class="baseTag progInter">Octa</div>
+          </div>
+          <div class="row">
+            <div class="bin__display dis progDis progInter">
+              <!-- <div class="baseTag">Bin</div> -->
+              0
+            </div>
+            <div class="octa__display dis progDis progInter">
+              <!-- <div class="baseTag">Octa</div> -->
+              0
+            </div>
+          </div>
+        </div>
+        <div class="progInter" id="progBtnDiv">
+          <div class="progBtnRow" id="baseModeDiv">
+            <button class="baseBtn" id="decMode">Dec</button>
+            <button class="baseBtn" id="binMode">Bin</button>
+            <button class="baseBtn" id="octMode">Oct</button>
+            <button class="baseBtn" id="hexMode">Hex</button>
+          </div>
+          <div class="progBtnRow" id="bitOPDiv">
+            <button class="bitOp operator">AND</button>
+            <button class="bitOp operator">OR</button>
+            <button class="bitOp operator">XOR</button>
+            <button class="bitOp operator">NOT</button>
+          </div>
+          <div class="progBtnRow" id="letterDiv">
+            <button class="number letterBtn notOct notBin">A</button>
+            <button class="number letterBtn notOct notBin">B</button>
+            <button class="number letterBtn notOct notBin">C</button>
+            <button class="number letterBtn notOct notBin">D</button>
+            <button class="number letterBtn notOct notBin">E</button>
+            <button class="number letterBtn notOct notBin">F</button>
+          </div>
+        </div>
+
+        <div class="calculator__keys">
+          
+          <button class="operator" data-key="plus" data-type="operator">+</button>
+          <button class="operator" data-key="minus" data-type="operator">-</button>
+          <button class="operator" data-key="times" data-type="operator">×</button>
+          <button class="operator" data-key="divide" data-type="operator">÷</button>
+          <button class="number" data-key="1" data-type="number">1</button>
+          <button class="number notBin" data-key="2" data-type="number">2</button>
+          <button class="number notBin" data-key="3" data-type="number">3</button>
+          <button class="number notBin" data-key="4" data-type="number">4</button>
+          <button class="number notBin" data-key="5" data-type="number">5</button>
+          <button class="number notBin" data-key="6" data-type="number">6</button>
+          <button class="number notBin" data-key="7" data-type="number">7</button>
+          <button class="number notOct notBin" data-key="8" data-type="number">8</button>
+          <button class="number notOct notBin" data-key="9" data-type="number">9</button>
+          <button class="number " data-key="0" data-type="number">0</button>
+          <button class="number" id="decimal" data-type="number">.</button>
+          <button class="clear" data-type="clear">C</button>
+          <button id="equals" data-key="equal" data-type="equal">=</button>
+          <button class="operator sci">sin</button>
+          <button class="operator sci">cos</button>
+          <button class="operator sci">tan</button>
+          <button class="operator sci">x^y</button>
+          <button class="operator sci">sqrt</button>
+          <button class="operator sci">ln</button>
+          <button class="operator sci">abs</button>
+          <button class="operator sci">n!</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script10.js"></script>
+  </body>
+</html>
+
